@@ -89,7 +89,7 @@ Also, there is an alternative for the battery management, is possible to provide
 - JST-XH 2 Pos female connector and a JST-XH 2 Pos male connector
 - 5V Charger (only used to charge the battery)
 
-![alt text](./Wiring_Diagrams/Wiring_Buoy_Wiring_Buoy_WithoutGSM_08_wired.png "Boost Converter")
+![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_08_wired.png "Boost Converter")
 
 This alternative is valid and possible, but is not ideal for longer working time (compared to the first one). It is important to consider the efficiency of the boost converter. The selected boost converter will have a voltage drop at a current higher than 500mA, that should be taken into consideration.
 
