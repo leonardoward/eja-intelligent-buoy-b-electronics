@@ -1,6 +1,8 @@
 # EJA Intelligent Buoy B - Electronic Design
 
-EJA Intelligent Buoy B - Electronic Design - 2020 Hackaday Dream Team Challenge for Conservation X Labs
+EJA Intelligent Buoy B - Electronic Design - [2020 Hackaday Dream Team Challenge for Conservation X Labs](https://hackaday.io/project/173457-2020-hdp-dream-team-conservation-x-labs)
+
+Buoy B V1.0 is a 102.46 mm x 44.20 mm PCB that integrates 4 main components (ESP32, LoRa, GPS and Motor Driver).
 
 This repository contains the KiCad design for the PCB of the Intelligent Buoy B. It also contains the 3D models used to visualize the design in the KiCad 3D viewer.
 
@@ -12,9 +14,18 @@ This repository contains the KiCad design for the PCB of the Intelligent Buoy B.
 
 ![alt text](./img/Components_Buoy_B.jpg "Components")
 
+Sources:
+
+- [ESP32-DEVKITC-32D](https://www.digikey.com/product-detail/es/espressif-systems/ESP32-DEVKITC-32D/1965-1000-ND/9356990)
+- [RFM95W LoRa Radio](https://www.digikey.com/product-detail/es/adafruit-industries-llc/3072/1528-1667-ND/6005357)
+- [TB6612FNG MOTOR DRIVER BOARD](https://www.digikey.com/product-detail/es/sparkfun-electronics/ROB-14450/1568-1755-ND/7915576)
+- [Adafruit Ultimate GPS](https://www.digikey.com/product-detail/es/adafruit-industries-llc/746/1528-1153-ND/5353613)
+
 ## Schematic ##
 
 ![alt text](./img/Schematic_Buoy_B.png "Schematic")
+
+[For a detailed explanation of the schematic visit the following log.](https://hackaday.io/project/173457/log/181832-buoy-b-v10-schematic-and-pcb-design)
 
 ## PCB Layout ##
 
@@ -49,16 +60,55 @@ Components List:
 21. [RFM95W LoRa Radio](https://www.digikey.com/product-detail/es/adafruit-industries-llc/3072/1528-1667-ND/6005357)
 22. CONN HEADER VERT 16POS 2.54MM (included in [RFM95W LoRa Radio](https://www.digikey.com/product-detail/es/adafruit-industries-llc/3072/1528-1667-ND/6005357))
 
+[For a detailed Bill of Materials visit the following log.](https://hackaday.io/project/173457/log/183762-buoy-b-v10-bill-of-materials)
+
+[For a detailed explanation about the soldering and assembly procedure visit the following log.](https://hackaday.io/project/173457/log/183666-buoy-b-v10-assembly)
+
 ## Wiring Diagrams ##
+
+### Battery Management ###
+
+The original design of the board considered the following components:
+
+- Battery (5V < Voltage < 15V)
+- PCB Board Buoy B V1.0
+- Buck Converter
+- Switch
+- Extra capacitor
 
 ![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_07_wired.png "Buck Converter")
 
+Also, there is an alternative for the battery management, is possible to provide the required voltages with a boost converter and a 3.7V Battery, like the following example:
+
+- 3.7V 1 Cell Battery
+- PCB Board Buoy B V1.0
+- Boost Converter
+- Micro USB Breakout Board
+- Switch
+- Extra capacitor
+- JST-XH 2 Pos female connector and a JST-XH 2 Pos male connector
+- 5V Charger (only used to charge the battery)
+
 ![alt text](./Wiring_Diagrams/Wiring_Buoy_Wiring_Buoy_WithoutGSM_08_wired.png "Boost Converter")
+
+This alternative is valid and possible, but is not ideal for longer working time (compared to the first one). It is important to consider the efficiency of the boost converter. The selected boost converter will have a voltage drop at a current higher than 500mA, that should be taken into consideration.
+
+### Motors ###
+
+The board was designed to handle 3 different types of motors, those are:
+
+- Servo Motor
 
 ![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_06_wired.png "Servo Motor")
 
+- Stepper Motor (using the driver TB6612FNG)
+
 ![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_09_wired.png "Stepper Motor")
+
+- DC Motor (using the driver TB6612FNG)
 
 ![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_05_wired.png "DC Motor 1")
 
-![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_05_wired_2.png "DC Motor 1")
+![alt text](./Wiring_Diagrams/Wiring_Buoy_WithoutGSM_05_wired_2.png "DC Motor 2")
+
+[For more information about the wiring diagrams and the project visit the following log.](https://hackaday.io/project/173457/log/182722-buoy-b-v10-wiring-diagrams)
