@@ -8,7 +8,7 @@ This repository contains the KiCad design for the PCB of the Intelligent Buoy B.
 
 ## Main Components ##
 
-![alt text](./img/Components_Buoy_3.jpg "Components")
+![alt text](./img/Components_Buoy_4.jpg "Components")
 
 ## Schematic ##
 
@@ -20,7 +20,7 @@ This repository contains the KiCad design for the PCB of the Intelligent Buoy B.
 
 ## Assembly ##
 
-![alt text](./Assembly/Assembly_N_01_Buoy_B-All_Fixed.jpg "Assembly Guide")
+![alt text](./Assembly/Assembly_N_01_Buoy_B-All_Fixed_4.jpg "Assembly Guide")
 
 ## Wiring Diagrams ##
 
