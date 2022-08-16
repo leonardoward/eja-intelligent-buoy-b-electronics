@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name Footprints)(type KiCad)(uri ${KIPRJMOD}/Footprints)(options "")(descr ""))
+  (lib (name "Footprints")(type "KiCad")(uri "${KIPRJMOD}/Footprints")(options "")(descr ""))
+  (lib (name "FeatherWing_Template")(type "KiCad")(uri "${KIPRJMOD}/Footprints/FeatherWing_Template.pretty")(options "")(descr ""))
+  (lib (name "Ethernet-FeatherWing")(type "KiCad")(uri "${KIPRJMOD}/Footprints/Ethernet-FeatherWing.pretty")(options "")(descr ""))
 )
