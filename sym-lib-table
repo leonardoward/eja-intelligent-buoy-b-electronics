@@ -6,4 +6,7 @@
   (lib (name "TB6612FNG")(type "KiCad")(uri "${KIPRJMOD}/Symbols/TB6612FNG.kicad_sym")(options "")(descr ""))
   (lib (name "Ethernet-FeatherWing")(type "KiCad")(uri "${KIPRJMOD}/Symbols/Ethernet-FeatherWing.kicad_sym")(options "")(descr ""))
   (lib (name "R-10K-0805")(type "KiCad")(uri "${KIPRJMOD}/Symbols/R-10K-0805.kicad_sym")(options "")(descr ""))
+  (lib (name "C-2200uF-50V-20%")(type "KiCad")(uri "${KIPRJMOD}/Symbols/C-2200uF-50V-20%.kicad_sym")(options "")(descr ""))
+  (lib (name "AZ1117CR-3_3TRG1")(type "KiCad")(uri "${KIPRJMOD}/Symbols/AZ1117CR-3_3TRG1.kicad_sym")(options "")(descr ""))
+  (lib (name "C-47uF-0805-10V")(type "KiCad")(uri "${KIPRJMOD}/Symbols/C-47uF-0805-10V.kicad_sym")(options "")(descr ""))
 )
